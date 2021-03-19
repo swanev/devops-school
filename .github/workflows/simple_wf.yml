@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
     inputs:
       tags:
-        description: 'Dev School Task input'  
+        description: 'Dev-School-Task-input'
 
 jobs:
 
