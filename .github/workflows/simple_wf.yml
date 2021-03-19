@@ -19,12 +19,9 @@ jobs:
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2
-        - name: 1.1 UPLOADING FILES
+        - name: 1.2. Check dirs
           run: |
-            ls /home/runner
-            ls /home/runner/work
-            ls /home/runner/work/devops-school/
-            ls /home/runner/work/devops-school/devops-school/
+            find / -name log.md
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
           with:
