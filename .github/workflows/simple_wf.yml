@@ -21,6 +21,8 @@ jobs:
           uses: ./.github/actions/action_1.2
         - name: 1.1 UPLOADING FILES
           run: |
+            ls /home/runner
+            ls /home/runner/work
             ls /home/runner/work/devops-school/
             ls /home/runner/work/devops-school/devops-school/
         - name: 1.3 DOWNLOAD ARTIFACT
