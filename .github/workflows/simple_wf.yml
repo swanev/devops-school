@@ -2,9 +2,9 @@ name: Simple Workflow
 
 on:
     workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Dev-school-task-input'
+      inputs:
+        tags:
+          description: 'Dev-school-task-input'
 
 jobs:
 
