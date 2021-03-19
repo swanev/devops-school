@@ -4,7 +4,7 @@ RUN apk add --no-cache python3 git
 
 COPY entrypoint.sh /entrypoint.sh
 COPY main.py /main.py
-COPY /tmp/tag.txt /tag.txt
+COPY /tag.txt /tag.txt
 
 RUN chmod +x /entrypoint.sh
 
