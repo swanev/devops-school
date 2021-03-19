@@ -20,7 +20,7 @@ jobs:
           uses: ./.github/actions/action_1.2
         - name: ADD tag to artifact
           run: |
-            echo "Tags: ${{ github.event.inputs.tags }}" >> /tmp/tag.txt          
+            echo "Tags: ${{ github.event.inputs.tags }}" > /tag.txt          
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
           with:
