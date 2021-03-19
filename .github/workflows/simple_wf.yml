@@ -2,6 +2,13 @@ name: Simple Workflow
 
 on:
     workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Dev School Task input'  
 
 jobs:
 
@@ -20,3 +27,5 @@ jobs:
           with:
               name: log.md
               path: /home/runner/work/devops-school/devops-school/log.md
+        - run: |
+            echo "Tags: ${{ github.event.inputs.tags }}" >> /home/runner/work/devops-school/devops-school/log.md
