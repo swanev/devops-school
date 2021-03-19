@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
     inputs:
       tags:
-        description: 'Dev-School-Task-input'
+        description: 'Dev-school-task-input'
 
 jobs:
 
@@ -23,5 +23,6 @@ jobs:
           with:
               name: log.md
               path: /home/runner/work/devops-school/devops-school/log.md
-        - run: |
+        - name: ADD tag to artifact
+          run: |
             echo "Tags: ${{ github.event.inputs.tags }}" >> /home/runner/work/devops-school/devops-school/log.md
